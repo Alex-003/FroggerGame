@@ -70,8 +70,9 @@ function moveFrog(event) {
   squares[currentIndex].classList.add("frog");
 }
 
+document.addEventListener("touchstart", moveFrog);
+document.addEventListener("touchend", moveFrog);
 
-document.addEventListener("keyup", moveFrog);
 
 function autoMoveElements() {
   currentTime--;
